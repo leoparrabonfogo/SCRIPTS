@@ -6,6 +6,15 @@
 ```bash
 #!/bin/bash
 
+#variaveis do sistema
+USER="Leo"
+PASS="Senha"
+VERMELHO="\033[31;1m"
+VERDE="\033[32;1m"
+AMARELO="\033[33;1m"
+AZUL="\033[36;1m"
+FECHAR="\033[m"
+
 while :; do  
 read -p "Login: " USER
 read -p "Password: " PASS
