@@ -4,6 +4,8 @@
 <summary>script teste</summary>
 
 ```bash
+#!/bin/bash
+
 while :; do  
 read -p "Login: " USER
 read -p "Password: " PASS
@@ -46,6 +48,8 @@ esac
 <summary>script 2</summary>
 
 ```bash
+#!/bin/bash
+
 list=("nome" "ddd" "telefone")
 
 len="${#list[@]}"
