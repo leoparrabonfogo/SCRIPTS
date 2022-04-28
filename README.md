@@ -40,3 +40,28 @@ esac
 ```
 </details>
 <br>
+
+
+details>
+<summary>script 2</summary>
+
+```bash
+list=("nome" "ddd" "telefone")
+
+len="${#list[@]}"
+
+declare -a completa
+for (( i=0; i<$len; i++ )); do
+  read -p "${list[$i]}: " line
+  completa[$i]+=${line}
+done
+
+for i in $(seq 0 $len);
+do
+  echo "${list[$i]}: ${completa[$i]}"
+done
+```
+</details>
+<br>
+
+
