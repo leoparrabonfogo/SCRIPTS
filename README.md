@@ -1,0 +1,42 @@
+# scripts
+
+<details>
+<summary>script teste</summary>
+
+```bash
+while :; do  
+read -p "Login: " USER
+read -p "Password: " PASS
+
+if [[ "$USER" = "leo" ]] && [[ "$PASS" -eq "1234" ]]; then
+    echo -e "${VERDE}Logado...Abrindo Menu"${FECHAR}
+    break
+    
+else 
+    echo -e ${VERMELHO}"Login invalido...Tente Novamente"${FECHAR}
+    
+fi
+done
+    sleep 1s
+
+ echo -e ${AMARELO}"=======BEM VINDO======${FECHAR}
+     ${AZUL}1) Abrir firefox${FECHAR}
+     ${AZUL}2) Abrir Vs Code${FECHAR}
+     ${AZUL}3) Abrir Calendario${FECHAR}
+     ${AZUL}4) Abrir Calculadora${FECHAR}
+     ${AZUL}5) Sair${FECHAR}
+${AMARELO}======================${FECHAR}"
+
+read -p "Selecione uma opcao: " OPCAO
+
+case "$OPCAO" in
+    1) firefox & ;;
+    2) code & ;;
+    3) calcurse & ;;
+    4) galculator & ;;
+    5) exit 0 & ;;
+    *) echo "Essa opcao nao existe" ;;
+esac
+```
+</details>
+<br>
