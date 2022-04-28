@@ -42,7 +42,7 @@ esac
 <br>
 
 
-details>
+<details>
 <summary>script 2</summary>
 
 ```bash
