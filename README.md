@@ -6,7 +6,7 @@
 ```bash
 #!/bin/bash
 
-#variaveis do sistema
+variaveis do sistema
 USER="Leo"
 PASS="Senha"
 VERMELHO="\033[31;1m"
